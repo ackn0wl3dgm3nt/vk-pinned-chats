@@ -1,0 +1,24 @@
+{
+	"name": "Дополнительный список закрепленных чатов в ВК",
+	"description": "Расширение, позволяющее закрепить более 5 чатов в социальной сети ВКонтакте.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"author": "ackn0wl3dgm3nt",
+	"content_scripts": [
+		{
+			"matches": ["https://vk.com/im*"],
+			"js": ["app.js"]
+		}
+	],
+	"permissions": ["storage", "tabs"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "Доп. список закрепленных чатов в ВК",
+		"default_icon": {
+			"16": "icons/icon.png",
+			"32": "icons/icon.png",
+			"48": "icons/icon.png",
+			"128": "icons/icon.png"
+		}
+	}
+}
